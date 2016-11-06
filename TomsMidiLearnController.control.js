@@ -563,6 +563,7 @@ function init() {
 function onMidi(status, data1, data2) {
    // Creating the convenience Midi object...
    midi = new MidiData(status, data1, data2);
+   printMidi(status, data1, data2);
 
    // Creating the data for the Midi Monitor in Preferences:
    if (gen.midiMonEnable) {
@@ -977,6 +978,7 @@ function setKnobMode() {
 
 // Helper Function to set the Knob Value depending on the current Mode:
 function setKnobValue(index, midi) {
+   println(gen.knobsRelative);
   var val;
   var inc = function(i){
     var v
@@ -1006,7 +1008,7 @@ function setKnobValue(index, midi) {
    if (gen.knobsRelative) {
      val.inc(inc(midi.data2), 128);
    } else {
-     val.set(inc(midi.data2), 128);
+     val.set(midi.data2, 128);
    }
 }
 
