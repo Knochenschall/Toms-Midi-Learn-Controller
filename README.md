@@ -1,10 +1,13 @@
 Toms-Midi-Learn-Controller
 ==========================
 
-A generic controller script created for Bitwig Studio 1.x  that allows the user to Midi-Learn Knobs, Faders and Transport Buttons.
+A generic controller script created for **Bitwig Studio 1.x in 2014**  that allows the user to Midi-Learn Knobs, Faders and Transport Buttons.
 
-This is mainly a proof of concept!
-I don't think the script is good enough for prime time, but it may still help some people to use their controllers without scripting or inspire others.
+**This was mainly a proof of concept and is no longer maintained for current versions of Bitwig Studio!**
+I don't think the script is good enough for prime time, but it may still help some people to use their controllers without scripting or inspire others to write their own solutions.
+
+For current version of Bitwig Studio I would recommend the Flexi Script by Jürgen Moßgraber instead:
+http://www.mossgrabers.de/Software/Bitwig/Bitwig.html
 
 What's missing:
 - Device navigation.
